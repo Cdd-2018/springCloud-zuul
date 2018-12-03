@@ -4,7 +4,6 @@ spring:
   profiles:
     active: DEV
 
-
 eureka:
   client:
     service-url:
@@ -21,3 +20,5 @@ zuul:
     offerService:
       path: /offerService/**
       serviceId: offer
+#      饥饿加载
+  ignored-services: *

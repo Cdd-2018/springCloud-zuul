@@ -6,6 +6,8 @@ import com.chendongdong.zuul.Filter.routeFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 import com.chendongdong.zuul.Filter.postFilter;
@@ -13,6 +15,7 @@ import com.chendongdong.zuul.Filter.postFilter;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableZuulProxy
+@EnableFeignClients
 public class ZuulApplication {
 
 	public static void main(String[] args) {
